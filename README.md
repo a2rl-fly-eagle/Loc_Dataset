@@ -1,8 +1,6 @@
 # Loc_Dataset
-本数据集用于A2RL定位测试。<br>
-This dataset is used for localization testing.<br>
-
-
+本数据集v0.1用于A2RL定位测试。<br>
+本数据包含3类7种不同场景，总时长超过50分钟，激光雷达帧数超过3万个，按照速度和道路类型划分不同场景。
 
 ## 场景划分 Scene type
 | Scene | Time | Velocity | LiDAR |
@@ -19,7 +17,12 @@ This dataset is used for localization testing.<br>
 | high_long_curve_1    | 230s     | 7m/s~20ms     | 2240     |
 | high_long_curve_2    | 300s     | 7m/s~20ms     | 3000     |
 | high_long_curve_3    | 280s     | 7m/s~20ms     | 2800     |
+| pit_lane_0   | 120s     | 7m/s<     | 1160     |
+| pit_lane_1   | 140s     | 7m/s<     | 1400     |
 
+
+## 文件结构 File Sructure
+![数据存储结构](assets/structure.png)
 
 ## 测试基线 Test baseline
 位置信息：/a2rl/observer/ego_loc
@@ -114,3 +117,6 @@ other:
 /vectornav/raw/attitude
 
 /a2rl/eav24_bsu/kistler_distance
+
+## 效果演示 Video 
+![动图演示](assets/bag.gif)
