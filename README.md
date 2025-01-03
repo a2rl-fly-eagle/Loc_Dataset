@@ -1,7 +1,7 @@
 # Loc_Dataset
 本数据集v0.1用于A2RL定位测试。<br>
 本数据包含3类7种不同场景，总时长超过50分钟，激光雷达帧数超过3万个，按照速度和道路类型划分不同场景。<br>
-提供GNSS/INS传感器原始数据及人为滤波后的数据，包括GNSS信息、OSS信息、轮速信息、激光雷达原始点云信息等。
+提供RTK-GNSS/INS传感器原始数据及人为滤波后的数据，包括GNSS信息、OSS信息、轮速信息、激光雷达原始点云信息等。
 
 ## 下载链接 Download
 百度云盘：
@@ -38,8 +38,6 @@ ATE: Absolute Trajectory Error,绝对轨迹误差，评估估计轨迹与真实�
 RPE： Relative Error, 相对位姿误差，评估邻帧之间的相对位姿误差<br>
 
 ## 话题类别 Topic classification
-velocity
-
 linear velocity:
 
 /a2rl/eav24_bsu/kistler_correvit
