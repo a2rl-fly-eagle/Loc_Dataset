@@ -4,7 +4,7 @@
 提供RTK-GNSS/INS传感器原始数据及人为滤波后的数据，包括GNSS信息、OSS信息、轮速信息、激光雷达原始点云信息等。
 
 ## 下载链接 Download
-百度云盘：
+百度云盘：https://pan.baidu.com/s/1VMbNRptQ9a71B8n04lAcAQ?pwd=khyn 密码：khyn 
 
 ## 场景划分 Scene type
 | Scene | Time | Velocity | LiDAR |
