@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/58f23406-12ab-4a90-b4c4-a520ea66f490)# Loc_Dataset
+# Loc_Dataset
 本数据集v0.1用于A2RL定位测试。<br>
 本数据包含3类7种不同场景，总时长超过50分钟，激光雷达帧数超过3万个，按照速度和道路类型划分不同场景。<br>
 提供RTK-GNSS/INS传感器原始数据及人为滤波后的数据，包括GNSS信息、OSS信息、轮速信息、激光雷达原始点云信息等。
