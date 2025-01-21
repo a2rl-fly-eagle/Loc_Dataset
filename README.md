@@ -38,9 +38,9 @@ ATE: Absolute Trajectory Error,绝对轨迹误差，评估估计轨迹与真实�
 RPE： Relative Error, 相对位姿误差，评估邻帧之间的相对位姿误差<br>
 
 How to test baseline?<br>
-pip install evo
-evo_ate GT_file Estimate_file -p
-evo_rpe GT_file Estimate_file -p
+pip install evo<br>
+evo_ate GT_file Estimate_file -p<br>
+evo_rpe GT_file Estimate_file -p<br>
 rmse = np.sqrt(np.mean(np.array(ate_errors)**2))
 
 | Algrithm | ATE | MAX ERORR | RPE Mean | RMSE |
