@@ -1,4 +1,4 @@
-# Loc_Dataset
+![image](https://github.com/user-attachments/assets/58f23406-12ab-4a90-b4c4-a520ea66f490)# Loc_Dataset
 本数据集v0.1用于A2RL定位测试。<br>
 本数据包含3类7种不同场景，总时长超过50分钟，激光雷达帧数超过3万个，按照速度和道路类型划分不同场景。<br>
 提供RTK-GNSS/INS传感器原始数据及人为滤波后的数据，包括GNSS信息、OSS信息、轮速信息、激光雷达原始点云信息等。
@@ -36,6 +36,30 @@
 RMSE: Mean Squared Error，均方根误差，评估估计位置与真实位置之间的误差<br>
 ATE: Absolute Trajectory Error,绝对轨迹误差，评估估计轨迹与真实轨迹的全局一致性<br>
 RPE： Relative Error, 相对位姿误差，评估邻帧之间的相对位姿误差<br>
+
+How to test baseline?
+pip install evo
+evo_ate GT_file Estimate_file -p
+evo_rpe GT_file Estimate_file -p
+rmse = np.sqrt(np.mean(np.array(ate_errors)**2))
+
+| Algrithm | ATE | MAX ERORR | RPE Mean | RMSE |
+|:-----------|------------:|:------------:|------------:|------------:|
+| FASTLIO    | 8.6817     | 21.719       | 11.3849     |       |
+
+FASTLIO
+| Scene | ATE | MAX ERORR | RPE Mean | RMSE |
+|:-----------|------------:|:------------:|------------:|------------:|
+| high_curve_0    | 8.96     | 16.529       | 8.029     |       |
+| high_long_0    | 14.123     | 20.354     | 29.215     |       |
+| high_long_1    | 2.853     | 7.432     | 5.446     |       |
+| high_long_curve_0      | 5.883     | 19.068     | 7.462     |       |
+| high_long_curve_1      | 14.832     | 38.845     | 15.54     |       |
+| high_long_curve_2      | 10.75     | 34.857     | 11.994     |       |
+| slow_curve_0      | 5.238     | 25.706     | 6.278     |       |
+| slow_curve_1      | 12.422     | 27.115     | 14.582     |       |
+| slow_long_0      | 0.479     | 3.695     | 0.501     |       |
+| slow_long_1      | 11.277     | 23.859     | 14.586     |       |
 
 ## 话题类别 Topic classification
 linear velocity:
