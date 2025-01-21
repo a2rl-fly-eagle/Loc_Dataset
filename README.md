@@ -49,7 +49,8 @@ How to test baseline?<br>
 pip install evo<br>
 evo_ate GT_file Estimate_file -p<br>
 evo_rpe GT_file Estimate_file -p<br>
-rmse = np.sqrt(np.mean(np.array(ate_errors)**2))
+rmse = np.sqrt(np.mean(np.array(ate_errors)**2))<br>
+evo_ape -r trans --max_error GT_file Estimate_file -p<br>
 
 | Algrithm | ATE | MAX ERORR | RPE Mean | RMSE |
 |:-----------|------------:|:------------:|------------:|------------:|
