@@ -37,7 +37,7 @@ RMSE: Mean Squared Error，均方根误差，评估估计位置与真实位置�
 ATE: Absolute Trajectory Error,绝对轨迹误差，评估估计轨迹与真实轨迹的全局一致性<br>
 RPE： Relative Error, 相对位姿误差，评估邻帧之间的相对位姿误差<br>
 
-How to test baseline?
+How to test baseline?<br>
 pip install evo
 evo_ate GT_file Estimate_file -p
 evo_rpe GT_file Estimate_file -p
