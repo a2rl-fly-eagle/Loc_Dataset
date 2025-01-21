@@ -33,18 +33,17 @@
 速度信息：/a2rl/vn/ins(秒速)或/a2rl/eav24_bsu/kistler_correvit(时速)，车体坐标系<br>
 航向信息：/a2rl/observer/ego_state，ENU坐标系<br>
 
-RMSE: Mean Squared Error，均方根误差，评估估计位置与真实位置之间的误差
+RMSE: Mean Squared Error，均方根误差，评估估计位置与真实位置之间的误差<br>
 ![RMSE Formula](assets/RMSE.png)
 
-ATE: Absolute Trajectory Error，绝对轨迹误差，评估估计轨迹与真实轨迹的全局一致性
-$$ \text{ATE} = \frac{1}{n} \sum_{i=1}^{n} \| \mathbf{T}_\text{gt}(i) - \mathbf{T}_\text{est}(i) \| $$
+ATE: Absolute Trajectory Error，绝对轨迹误差，评估估计轨迹与真实轨迹的全局一致性<br>
+![ATE Formula](assets/ATE.png)
 
-RPE： Relative Pose Error，相对位姿误差，评估邻帧之间的相对位姿误差
-$$ \text{RPE} = \frac{1}{n-1} \sum_{i=1}^{n-1} \| (\mathbf{T}_\text{gt}(i)^{-1} \mathbf{T}_\text{gt}(i+1)) - (\mathbf{T}_\text{est}(i)^{-1} \mathbf{T}_\text{est}(i+1)) \| $$
+RPE： Relative Pose Error，相对位姿误差，评估邻帧之间的相对位姿误差<br>
+![RPE Formula](assets/RPE.png)
 
-Max Error: 衡量的是轨迹中位置误差的最大值，即在整个轨迹中的最大绝对误差。
-$$ \text{MAX ERROR} = \max_{i} \| \mathbf{T}_\text{gt}(i) - \mathbf{T}_\text{est}(i) \| $$
-
+Max Error: 衡量的是轨迹中位置误差的最大值，即在整个轨迹中的最大绝对误差。<br>
+![MAX Error Formula](assets/MAXERROR.png)
 
 How to test baseline?<br>
 pip install evo<br>
