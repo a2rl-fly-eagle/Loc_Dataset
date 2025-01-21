@@ -34,7 +34,7 @@
 航向信息：/a2rl/observer/ego_state，ENU坐标系<br>
 
 RMSE: Mean Squared Error，均方根误差，评估估计位置与真实位置之间的误差
-![](assets/RMSE.png)
+![RMSE Formula](assets/RMSE.png)
 
 ATE: Absolute Trajectory Error，绝对轨迹误差，评估估计轨迹与真实轨迹的全局一致性
 $$ \text{ATE} = \frac{1}{n} \sum_{i=1}^{n} \| \mathbf{T}_\text{gt}(i) - \mathbf{T}_\text{est}(i) \| $$
